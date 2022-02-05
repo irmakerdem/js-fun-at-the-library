@@ -10,14 +10,37 @@ function buildMainCharacter(nam, ag, pro) {
   }
 };
 
+//THIS ALSO WORKS:
+// function saveReview(actualReview, reviews) {
+//   for (var i = 0; i < reviews.length; i++) {
+//     if (actualReview === reviews[i]) {
+//       return
+//     }
+//   }
+//     reviews.push(actualReview);
+// }
+
+//THIS ALSO WORKS:
+// function saveReview(actualReview, reviews) {
+//   for (var i = 0; i <= reviews.length; i++) {
+//     if (actualReview !== reviews[i]) {
+//       return reviews.push(actualReview);
+// }   else {
+//     return reviews;
+//   }
+//   }
+// }
+
 function saveReview(actualReview, reviews) {
 // if the array reviews doesn't have the actualReview string in it
 // it results to false (meaning it's unique)
   if (reviews.includes(actualReview) === false) {
+    //false === false
 //then add the unique review to the array
-  return reviews.push(actualReview)
+  reviews.push(actualReview)
   }
 };
+
 
 
 /*
@@ -29,30 +52,57 @@ if review is unique --> add to array
 if review is NOT unique --> don't add to array
 */
 
+//THIS ALSO WORKS:
+// function calculatePageCount(bookTitle) {
+//   var bookPageCount = bookTitle.length * 20;
+//   return bookPageCount;
+// }
+
+
 function calculatePageCount(bookTitle) {
-  var bookPageCount = bookTitle.length * 20;
-  return bookPageCount;
+  return bookTitle.length * 20;
 }
 
-//there's a function calculatePageCount
-//it takes in bookTitle
 
-//if there is a letter, add 20 pages
+//THIS ALSO WORKS:
+// function writeBook(bookTitle, bookCharacter, bookGenre) {
+//   var book = {
+//   title: bookTitle,
+//   mainCharacter: bookCharacter,
+//   pageCount: calculatePageCount(bookTitle),
+//   genre: bookGenre,
+// }
+//   return book;
+// };
+
+//THIS ALSO WORKS:
+// function writeBook(bookTitle, bookCharacter, bookGenre) {
+//   return book = {
+//   title: bookTitle,
+//   mainCharacter: bookCharacter,
+//   pageCount: calculatePageCount(bookTitle),
+//   genre: bookGenre
+// };
+// };
 
 
 function writeBook(bookTitle, bookCharacter, bookGenre) {
-  var book = {
+  return {
   title: bookTitle,
   mainCharacter: bookCharacter,
   pageCount: calculatePageCount(bookTitle),
-  genre: bookGenre,
-}
-  return book;
+  genre: bookGenre
+};
 };
 
 function editBook(book) {
   book.pageCount = book.pageCount * 0.75;
 };
+
+//THIS ALSO WORKS:
+// function editBook(book) {
+//   return book.pageCount = book.pageCount * 0.75;
+// };
 
 module.exports = {
   createTitle,
