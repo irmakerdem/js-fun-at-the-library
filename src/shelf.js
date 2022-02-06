@@ -48,6 +48,7 @@ for (var i = 0; i < shelfArray.length; i++) {
 }
 var shelfArray = [];
 
+//not checking to see if title equals true but if title is title (hence true)
 
 
 module.exports = {
