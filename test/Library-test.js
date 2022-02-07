@@ -93,7 +93,7 @@ describe("library.js", function() {
       }
       var prideAndPrejudice = {
         title: "Pride and Prejudice",
-        mainCharacter: { name: "Eliabeth Bennet", age: 20, pronouns: "she/her" },
+        mainCharacter: { name: "Elizabeth Bennet", age: 20, pronouns: "she/her" },
         pageCount: 432,
         genre: "fiction"
       }
